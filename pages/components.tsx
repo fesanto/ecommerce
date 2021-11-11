@@ -19,8 +19,9 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to THE E-COMMERCE!
+          Página COMPONENTS
         </h1>
+        <p className={styles.p}>Mussum Ipsum, cacilds vidis litro abertis.<br />Si u mundo tá muito paradis?<br />Toma um mé que o mundo vai girarzis! <br />Praesent malesuada urna nisi, quis volutpat erat hendrerit non. <br />Nam vulputate dapibus.<br /> Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! <br />Suco de cevadiss deixa as pessoas mais interessantis.</p>
       </main>
 
       <footer className={styles.footer}>

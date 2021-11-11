@@ -28,6 +28,11 @@
   text-align: center;
 }
 
+.p {
+  font-size: 2rem;
+  color: blueviolet;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
