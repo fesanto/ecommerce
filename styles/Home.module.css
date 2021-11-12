@@ -30,7 +30,21 @@
 
 .p {
   font-size: 2rem;
-  color: blueviolet;
+  color: #8a2be2;
+}
+
+.header {
+  display: flex;
+}
+
+.header>ul {
+  display: flex;
+  align-items: center;
+}
+
+.header>ul>li {
+  list-style: none;
+  margin: 0 30px;
 }
 
 @media (max-width: 600px) {
