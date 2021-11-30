@@ -1,2 +1,2 @@
-import Header from './Header/index';
-export default Header
+export * from './Header';
+export * from './ComponentsProvider';

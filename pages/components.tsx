@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import styled from 'styled-components'
-import Header from '../components/index'
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
+import styled from 'styled-components';
+import { Header } from '../components'
 
 const Title = styled.h1`
   font-size: 50px;
