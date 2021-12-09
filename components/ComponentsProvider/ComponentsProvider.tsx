@@ -1,5 +1,5 @@
 import React from 'react';
-import themeDefault from '../../theme/index';
+import themeDefault from '../../theme/theme';
 import { ThemeProvider } from 'styled-components';
 
 type ComponentsProviderProps = {
