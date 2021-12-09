@@ -3,11 +3,6 @@ import styles from '../styles/Home.module.css';
 import styled from 'styled-components';
 import { Header } from '../components'
 
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`
-
 export default function Components() {
   return (
     <div className={styles.container}>
