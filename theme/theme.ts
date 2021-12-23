@@ -1,5 +1,5 @@
 
-const themeDefault = {
+export const themeDefault = {
   color: {
     c1a: "#151515",
     c1B: "#575757",
@@ -124,5 +124,3 @@ const themeDefault = {
     }
   }
 }
-
-export default themeDefault;
