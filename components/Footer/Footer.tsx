@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
+import Navigation from "./Navigation";
 
 const Container = styled.div`
   margin: 20px;
@@ -9,10 +10,6 @@ const Container = styled.div`
 const Section = styled.section`
   display: flex;
   justify-content: space-between;
-`;
-
-const FooterLink = styled.li`
-  padding: 10px 0;
 `;
 
 const Tags = styled.p`
@@ -32,75 +29,100 @@ export const Footer: React.FC = () => {
       <div className="container">
         <Section>
           <div>
-            <h3>Get in touch</h3>
-            <ul>
-              <FooterLink>
-                <Link href="#">About Us</Link>
-              </FooterLink>
-              <FooterLink>
-                <Link href="#">Careers</Link>
-              </FooterLink>
-              <FooterLink>
-                <Link href="#">Press Releases</Link>
-              </FooterLink>
-              <FooterLink>
-                <Link href="#">Blog</Link>
-              </FooterLink>
-            </ul>
+            <Navigation
+              title="Get in touch"
+              footerLink={[
+                {
+                  link: "About Us",
+                  path: "/about",
+                },
+                {
+                  link: "Career",
+                  path: "/career",
+                },
+                {
+                  link: "Press Releases",
+                  path: "/press",
+                },
+                {
+                  link: "Blog",
+                  path: "/blog",
+                },
+              ]}
+            />
           </div>
           <div>
-            <h3>Connections</h3>
-            <ul>
-              <FooterLink>
-                <Link href="#">Facebook</Link>
-              </FooterLink>
-              <FooterLink>
-                <Link href="#">Twitter</Link>
-              </FooterLink>
-              <FooterLink>
-                <Link href="#">Instagram</Link>
-              </FooterLink>
-              <FooterLink>
-                <Link href="#">YouTube</Link>
-              </FooterLink>
-              <FooterLink>
-                <Link href="#">LinkedIn</Link>
-              </FooterLink>
-            </ul>
+            <Navigation
+              title="Connections"
+              footerLink={[
+                {
+                  link: "Facebook",
+                  path: "https://www.facebook.com",
+                },
+                {
+                  link: "Twitter",
+                  path: "https://twitter.com",
+                },
+                {
+                  link: "Instagram",
+                  path: "https://instagram.com",
+                },
+                {
+                  link: "Youtube",
+                  path: "https://youtube.com",
+                },
+                {
+                  link: "LinkedIn",
+                  path: "https://www.linkedin.com",
+                },
+              ]}
+            />
           </div>
           <div>
-            <h3>Earnings</h3>
-            <ul>
-              <FooterLink>
-                <Link href="#">Become an Affiliate</Link>
-              </FooterLink>
-              <FooterLink>
-                <Link href="#">Advertise your product</Link>
-              </FooterLink>
-              <FooterLink>
-                <Link href="#">Sell on Market</Link>
-              </FooterLink>
-            </ul>
+            <Navigation
+              title="Earnings"
+              footerLink={[
+                {
+                  link: "Become an Affiliate",
+                  path: "/become-an-affiliate",
+                },
+                {
+                  link: "Advertise your product",
+                  path: "/advertise-your-product",
+                },
+                {
+                  link: "Sell on Market",
+                  path: "/sell-on-market",
+                },
+              ]}
+            />
           </div>
           <div>
-            <h3>Account</h3>
-            <ul>
-              <FooterLink>
-                <Link href="#">Your Account</Link>
-              </FooterLink>
-              <FooterLink>
-                <Link href="#">Returns Centre</Link>
-              </FooterLink>
-              <FooterLink>
-                <Link href="#">100% purchase protection</Link>
-              </FooterLink>
-              <FooterLink>
-                <Link href="#">Chat with us</Link>
-              </FooterLink>
-              <FooterLink>
-                <Link href="#">Help</Link>
-              </FooterLink>
-            </ul>
+            <Navigation
+              title="Account"
+              footerLink={[
+                {
+                  link: "Your account",
+                  path: "/your-account",
+                },
+                {
+                  link: "Returns Centre",
+                  path: "/returns-centre",
+                },
+                {
+                  link: "100% purchase protection",
+                  path: "/protection",
+                },
+                {
+                  link: "Chat with us",
+                  path: "/chat-with-us",
+                },
+                {
+                  link: "Help",
+                  path: "/help",
+                },
+              ]}
+            />
           </div>
         </Section>
         <section>
